@@ -1,0 +1,26 @@
+.titulo {
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            text-align: center;
+
+            
+
+        }
+
+        th,
+        tr,
+        td {
+            border: solid 1px black;
+            align-items: center;
+            padding: 10px 15px;
+
+        }
+
+        .caixa-tabela {
+            display: flex;
+            justify-content: center;
+
+        } 
