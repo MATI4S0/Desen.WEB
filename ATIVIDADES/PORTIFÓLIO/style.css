@@ -1,26 +1,36 @@
-.titulo {
-            text-align: center;
-        }
 
-        table {
-            border-collapse: collapse;
-            text-align: center;
+header {
+    background-color: #355872;
+    color: white;
+    padding: 10px;
+}
 
-            
+nav a {
+    color: white;;
+    margin-right: 20px;
+}
 
-        }
+nav a:hover {
+    background-color: #355872;
+    text-decoration: underline;
+    color: #9CD5FF;
+}
 
-        th,
-        tr,
-        td {
-            border: solid 1px black;
-            align-items: center;
-            padding: 10px 15px;
+body {
+    background-color: #7AAACE;
+}
 
-        }
+.paragrafos {
+    text-align: justify;
+    font-size: 20px;
+    color: #355872;
+}
 
-        .caixa-tabela {
-            display: flex;
-            justify-content: center;
+.subtitulo {
+    text-align: center;
+    color: #355872;
+}
 
-        } 
+.imagemHarry {
+    padding: auto;
+}
