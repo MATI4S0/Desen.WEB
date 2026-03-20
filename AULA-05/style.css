@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    background-color: red;
+    border: solid black 2px ;
+    margin: 20px;
+    width: 20%;
+
+    position: relative;
+
+}
+
+.cx1{
+
+    top: 50px;
+    left: 300px;
+    z-index: 2;
+
+}
