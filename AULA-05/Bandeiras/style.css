@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 50px;
+}
+
+
+/* holanda */
+.holanda div {
+    width: 300px;
+    height: 50px;
+    
+    
+}
+
+
+.vermeio-holanda {
+    color: rgb(190, 2, 2);
+    background-color: rgb(190, 2, 2);
+  
+}
+.branco {
+    color: rgb(212, 212, 212);
+    background-color: rgb(212, 212, 212);
+
+}
+
+.azul {
+    color: rgb(26, 38, 166);
+    background-color: rgb(26, 38, 166);
+}
+
+/* alemanha */
+.alemanha div {
+    width: 300px;
+    height: 50px;
+    
+
+}
+
+.alemanha {
+    border: solid 1px;
+    width: 200px;
+    height: 90px;
+}
+
+.preto {
+     color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+}
+
+.amarelo {
+    color: rgb(238, 211, 9);
+    background-color: rgb(238, 211, 9);
+} 
+
+
+.vermeio-alemanha {
+    color: rgb(190, 2, 2);
+    background-color: rgb(190, 2, 2);
+}
+
+/* italia */
+
+.italia div {
+    width: 33.33%;
+    height: 100%;
+    
+}
+
+.italia .verde {
+    background-color: rgb(90, 185, 64);
+}
+
+.italia .branco-italia {
+    background-color: rgb(212, 212, 212);
+} 
+
+
+.italia .vermelho-italia {
+    background-color: rgb(190, 2, 2);
+}
