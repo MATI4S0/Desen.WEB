@@ -1,0 +1,85 @@
+body {
+    background-color: #27374D;
+    padding: 0%;
+    border: 0%;
+
+    
+
+}
+
+
+.nome_inicio {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #E5BA41;
+}
+
+
+.princip_img {
+    border-radius: 35px;
+
+}
+
+.princip_img:hover {
+    box-shadow: 0 0 15px #E5BA41;
+    transform: scale(1.04);
+    
+}
+
+.LINHA {
+    height: 0.1px;
+    width: 100%;
+    border: solid black 0.1px;
+    padding-left: 0%;
+}
+
+
+.textinho_perfil {
+    text-align: justify;
+    padding-left: 10px;
+}
+
+.textinho_formacao {
+    text-align: justify;
+    padding-left: 10px;
+}
+
+h2 {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 10px;
+    color: #E5BA41;
+
+}
+
+.textinho_formacao {
+    text-align: justify;
+    padding-left: 10px;
+}
+
+.exp_profissa {
+    padding-left: 30px;
+}
+
+.top_competencias {
+    padding-left: 30px;
+}
+
+.textinho_contato {
+    text-align: justify;
+    padding-left: 10px;
+}
+
+main {
+    text-align: center;
+}
+
+
+
+.conjuntos {
+    border: 2px solid black;
+    border-radius: 10px;
+    
+}
