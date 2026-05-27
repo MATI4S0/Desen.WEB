@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+<body>
+
+    <div class="main">
+
+        <form action="#" method="post">
+            <h3>Cadastro</h3>
+
+            <div class="grupo">
+                <label for="Nome">Nome:</label>
+                <input type="text" name="campo_nome" id="nome" placeholder="Nome Completo...">
+            </div>
+
+            <div class="grupo">
+                <label for="Data de Nascimento">Data de Nascimento:</label>
+                <input type="date" name="campo_nascimento" id="nascimento">
+            </div>
+
+            <div class="grupo">
+                <label for="Email">Email:</label>
+                <input type="email" name="campo_email" id="email">
+            </div>
+
+            <div class="grupo">
+                <label for="Senha">Senha:</label>
+                <input type="password" name="campo_senha" id="senha">
+            </div>
+
+            <div class="grupo">
+                <label for="Telefone">Telefone:</label>
+                <input type="tel" name="campo_telefone" id="telefone">
+            </div>
+
+            <div class="grupo">
+                <label>Habilidades:</label>
+                <label for="html">
+                    <input type="checkbox" name="habilidades" id="html" value="HTML">HTML
+                </label>
+
+                <label for="css">
+                    <input type="checkbox" name="habilidades" id="css" value="CSS">CSS
+                </label>
+
+                <label for="javascript">
+                    <input type="checkbox" name="habilidades" id="javascript" value="JavaScript">JavaScript
+                </label>
+            </div>
+
+            <div class="grupo">
+                <label for="Curriculo">Curriculo:</label>
+                <input type="file" name="campo_curriculo" id="curriculo">
+            </div>
+
+            <div class="grupo">
+                <label for="Pais">País:</label>
+                <select name="campo_pais" id="pais">
+                    <option value="">Selecione um país</option>
+                    <option value="brasil">Brasil</option>
+                    <option value="estados-unidos">Estados Unidos</option>
+                    <option value="canada">Canadá</option>
+                    <option value="japao">Japão</option>
+                    <option value="russia">Rússia</option>
+
+                </select>
+            </div>
+
+            <div class="grupo">
+                <label for="Comentarios">Comentários:</label>
+                <textarea name="campo_comentarios" id="comentarios" rows="4"></textarea>
+            </div>
+
+
+            <button type="submit">Enviar</button>
+
+        </form>
+
+    </div>
+
+    <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
+
+    <script>
+        CKEDITOR.replace('comentarios');
+    </script>
+
+</body>
+
+</html>
