@@ -5,71 +5,109 @@
 }
 
 body {
-    background-color: white ;
+    background-color:#151515;
 }
 
-.page {
-    width: 1200px;
-    margin: 0 auto;
-
-    overflow: auto;
-}
-
-.menu {
-    height: 100px;
-    width: 1200px;
-    margin: 0 auto;
-
-}
-
-.menu-wrapper {
+header {
     width: 100%;
-    background-color: crimson;
+    height: 100px;
+    padding: 10px 0;
+    
+    float: left;
+    
+    text-align: center;
+    position: fixed;
+    
+    background-color:  #A61B1B;
+    color: white;
+    
+    
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu li {
+    float: left;
+    padding: 20px;
+}
+
+.menu li:hover {
+    background-color: #D4AF37;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu li a:hover {
+    color: #151515;
 }
 
 .sidebar {
-    min-height:calc(100vh - 100px - 200px);
-    width: 300px;
-    padding: 25px;
+    min-height: calc (100vh - 100px - 50px);
+    width: 25%;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-top: 100px;
 
-    background-color: whitesmoke;
     float: left;
+
+    background-color: #1D1D1D;
+    color: #C7C7C7;
 }
 
-.content {
-    min-height:calc(100vh - 100px - 200px);
-    width: 880px;;
-    padding: 25px;
+h2 {
+    color: #D4AF37;
+}
 
-
-    background-color: white;
-    float: right;
+.main-content {
+    padding: 15px;
+    margin-top: 100px;
+    width: 75%;
+    box-sizing: border-box;
+    min-height: calc (100vh - 100px - 50px);
     
-    line-height: 25px;
+    float: left;
+
+    background-color: #F5F5F5;
+    color: #222222;
 
 }
 
-.footer {
-    height: 200px;
+footer {
+    height: 50px;
     width: 100%;
+    padding: 15px 0;
 
-    background-color: red;
+    text-align: center;
     float: left;
+
+    background-color: #0F0F0F;
+    color: #D4AF37;
 }
 
-.foto {
-    width: 300px;
-    margin-right: 20px;
-    margin-top: 10px;
-
+.colunas_rodape {
+    border: 1px solid #D4AF37;
+    width: 24%;
+    min-height: 200px;
     float: left;
+    margin-right: 15px;
 }
 
-.jifs {
-    color: black;
+.img-rodape1 {
+    width: 100%;
+    height: 370px;
 }
 
-.logo {
-    width: 300px;
-    margin: 20px 0;
-}   
+.img-rodape2 {
+    width: 100%;
+    height: 370px;
+}
+
+p {
+    margin-bottom: 15px;
+}
