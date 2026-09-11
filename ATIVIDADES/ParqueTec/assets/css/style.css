@@ -303,3 +303,257 @@ header .menu .navegacao .idiomas img {
 
     color: #2d2d2d;
 }
+
+/* Rodapé */
+
+.rodape {
+    width: 100%;
+    min-height: 620px;
+    padding: 70px 5% 25px;
+
+    color: white;
+
+    background: 
+         radial-gradient(
+            circle at 8% 5%,
+            rgba(255, 0, 30, 0.85) 0%,
+            rgba(255, 0, 30, 0.35) 25%,
+            transparent 50%
+        ),
+        radial-gradient(
+            circle at 92% 8%,
+            rgba(255, 190, 0, 0.9) 0%,
+            rgba(255, 190, 0, 0.4) 30%,
+            transparent 55%
+        ),
+        radial-gradient(
+            circle at 85% 90%,
+            rgba(100, 190, 30, 0.8) 0%,
+            rgba(100, 190, 30, 0.4) 30%,
+            transparent 60%
+        ),
+        radial-gradient(
+            circle at 35% 90%,
+            rgba(30, 80, 180, 0.8) 0%,
+            rgba(30, 80, 180, 0.35) 35%,
+            transparent 65%
+        ),
+        linear-gradient(
+            135deg,
+            #b9233c,
+            #735276,
+            #3e6d87,
+            #6b9c36
+        );
+}
+
+.rodape-topo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-bottom: 65px;
+}
+
+.rodape-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.rodape-logo img:first-child {
+    width: 365px;
+    max-width: 100%;
+    height: auto;
+}
+
+.rodape-logo img:last-child {
+    width: 220px;
+    max-width: 100%;
+    height: auto;
+}
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    margin-top: 5px;
+}
+
+.newsletter-form {
+    display: flex;
+    width: 540px;
+    height: 54px;
+}
+
+.newsletter-form input {
+    width: 385px;
+    height: 54px;
+
+    border: none;
+    outline: none;
+
+    padding: 0 22px;
+
+    font-size: 16px;
+    color: white;
+
+    background-color: rgba(255, 255, 255, 0.35);
+
+    border-radius: 10px 0 0 10px;
+}
+
+.newsletter-form input::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.newsletter-form button {
+    width: 155px;
+    height: 54px;
+
+    border: none;
+    border-radius: 0 5px 5px 0;
+
+    background-color: #087bc1;
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+.newsletter-form button:hover {
+    background-color: #059e26;
+}
+
+.newsletter p {
+    width: 270px;
+
+    font-size: 17px;
+    line-height: 1.15;
+
+    letter-spacing: 0.5px;
+}
+
+
+.rodape-menus {
+    width: 58px;
+
+    margin-left: 30%;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 120px;
+    
+    margin-bottom: 65px;
+}
+
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.menu h3 {
+    font-size: 18px;
+    font-weight: bold;
+
+    letter-spacing: 0.8px;
+
+    margin-bottom: 2px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    letter-spacing: 0.4px;
+
+    transition: 0.2s;
+}
+
+.menu a:hover {
+    text-decoration:underline ;
+}
+
+.rodape-acoes {
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    margin-bottom: 70px;
+}
+
+.voltar-topo {
+    width: 162px;
+    height: 46px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+
+    background-color: rgba(210, 220, 150, 0.65);
+    color: white;
+
+    text-decoration: none;
+    font-size: 16px;
+
+    transition: 0.2s;
+}
+
+.voltar-topo:hover {
+    background-color: rgba(230, 235, 180, 0.8);
+}
+
+.rodape-politicas {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    margin-bottom: 65px;
+}
+
+.rodape-politicas a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    transition: 0.2s;
+
+}
+
+.rodape-politicas a:hover {
+    opacity: 0.7;
+}
+
+.copyright {
+    width: 100%;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    padding-top: 0;
+}
+
+.copyright p {
+    color: white;
+}
