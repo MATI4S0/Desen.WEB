@@ -1,1 +1,1 @@
-
+O JavaScript no Frontend é utilizado para tornar as páginas web interativas e dinâmicas. Ele permite modificar elementos HTML e CSS, responder às ações do usuário, como cliques e movimentos do mouse, validar formulários e atualizar conteúdos da página sem precisar recarregá-la.
