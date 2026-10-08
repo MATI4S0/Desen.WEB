@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troca de Imagens</title>
+</head>
+
+<body>
+
+    <img id="imagem" src="https:/picsum.photos/id/237/600/400" width="600" height="400">
+
+    <button onclick="anterior()">Anterior</button>
+    <button onclick="proxima()">Próxima</button>
+
+    <script>
+
+        const imagens = [
+            "https://picsum.photos/id/237/600/400",
+            "https://picsum.photos/id/238/600/400",
+            "https://picsum.photos/id/239/600/400",
+            "https://picsum.photos/id/240/600/400"
+        ]
+
+        let indice = 0
+
+        function anterior() {
+            indice--;
+
+            if (indice < 0) {
+                indice = imagens.length - 1;
+            }
+
+            document.getElementById("imagem").src = imagens[indice];
+        }
+
+        function proxima() {
+            indice++;
+
+            if (indice >= imagens.length) {
+                indice = 0;
+            }
+
+            document.getElementById("imagem").src = imagens[indice];
+        }
+
+        setInterval(trocarImagem, 5000)
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Aventuras</title>
+</head>
+<body>
+    
+    <h1>Gerador de Aventuras</h1>
+
+    <button id="Gerador">Gerar Aventura</button>
+
+    <p id="Aventura"></p>
+
+    <script>
+
+        const acoes = [
+            "A Busca",
+            "A Batalha",
+            "O Resgate"
+        ]
+
+        const locais = [
+            "na Floresta Sombira",
+            "no Reino Perdido",
+            "na Montanha Misteriosa"
+        ]
+
+        const complementos = [
+            "do Dragão",
+            "do Tesouro Esquecido",
+            "da Espada Ancestral"
+        ]
+
+        function sortear(array) {
+            const indice = Math.floor(Math.random() * array.length)
+            return array[indice]
+        }
+
+        document.getElementById("Gerador").addEventListener("click", function(){
+            const aventura = 
+                sortear(acoes) + " " +
+                sortear(locais) + " " +
+                sortear(complementos)
+            
+            document.getElementById("Aventura").textContent = aventura
+        })
+
+    </script>
+
+</body>
+</html>

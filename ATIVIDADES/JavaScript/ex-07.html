@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gravity Falls</title>
+
+    <style>
+        img {
+            width: 300px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h1>Gravity Falls</h1>
+
+    <img id="Personagem" src="https://static.wikia.nocookie.net/disney/images/e/e3/Profile_-_Dipper_Pines.png/revision/latest/thumbnail/width/360/height/360?cb=20250302171246" alt="Dipper">
+
+    <p id="Mensagem">Passe o mouse por cima da imagem</p>
+
+    <button id="Trocar">Trocar Imagem</button>
+
+    <script>
+
+        const imagem = document.getElementById("Personagem")
+        const mensagem = document.getElementById("Mensagem")
+        const botao = document.getElementById("Trocar")
+
+        imagem.addEventListener("mouseenter", function(){
+            mensagem.textContent = "Ei! Você enconstrou um mistério!"
+        })
+
+        imagem.addEventListener("mouseleave", function(){
+            mensagem.textContent = "Até mais!"
+        })
+
+        imagem.addEventListener("mousemove", function(){
+            mensagem.textContent = "Você está passando o mouse em mim!"
+        })
+
+        imagem.addEventListener("click", function(){
+            mensagem.textContent = "Cuidado! Existem mistérios por aqui!"
+        })
+
+        botao.addEventListener("click", function(){
+            imagem.src = "https://preview.redd.it/why-was-mabel-one-of-the-most-hated-characters-back-then-v0-67bg1wzhzdpd1.jpeg?auto=webp&s=d62733a9fdd947dec282778823df2b85264ac290"
+            imagem.alt = "Mabel"
+        })
+
+    </script>
+
+</body>
+</html>

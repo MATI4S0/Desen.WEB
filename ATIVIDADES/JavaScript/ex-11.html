@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+
+<body>
+
+    <h1>Cadastro</h1>
+
+    <form id="formulario">
+
+        <label>Nome: </label>
+        <input type="text" id="nome">
+        <br><br>
+
+        <label>E-mail:</label>
+        <input type="email" id="email">
+        <br><br>
+
+        <label>Senha:</label>
+        <input type="password" id="senha">
+        <br><br>
+
+        <label>Confirmar Senha: </label>
+        <input type="password" id="confirmacao">
+        <br><br>
+
+        <label>
+            <input type="checkbox" id="mostrar">
+            Mostrar Senha
+        </label>
+        <br><br>
+
+        <button type="submit">Cadastrar</button>
+
+    </form>
+
+    <p id="mensagem"></p>
+
+    <script>
+
+        const formulario = document.getElementById("formulario")
+        const mensagem = document.getElementById("mensagem")
+
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+
+        const senhaRegex = /^(?=.*[A-Z])(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/
+
+        formulario.addEventListener("submit", function (event) {
+
+            event.preventDefault()
+
+            const nome = document.getElementById("nome").value
+            const email = document.getElementById("email").value
+            const senha = document.getElementById("senha").value
+            const confirmacao = document.getElementById("confirmacao").value
+
+            if (nome.length < 3) {
+                mensagem.textContent = "O nome deve possuir pelo menos 3 caracteres."
+                return
+            }
+
+            if (!emailRegex.test(email)) {
+                mensagem.textContent = "E-mail inválido.";
+                return;
+            }
+
+            if (!senhaRegex.test(senha)) {
+                mensagem.textContent =
+                    "A senha deve possuir pelo menos 8 caracteres, uma letra maiúscula, um número e um caractere especial.";
+                return;
+            }
+
+            if (senha !== confirmacao) {
+                mensagem.textContent = "As senhas não são iguais.";
+                return;
+            }
+
+            mensagem.textContent = "Cadastro realizado com sucesso!"
+
+        })
+
+        document.getElementById("mostrar").addEventListener("change", function() {
+
+            const senha = document.getElementById("senha")
+            const confirmacao = document.getElementById("confirmacao")
+
+            if (this.checked) {
+                senha.type = "text"
+                confirmacao.type = "text"
+            } else {
+                senha.type = "password"
+                confirmacao.type = "password"
+            }
+
+        })
+
+
+    </script>
+
+</body>
+
+</html>

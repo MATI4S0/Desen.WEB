@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+</head>
+<body>
+
+    <p id="Contador">0</p>
+
+    <button id="Incrementar">Incrementar</button>
+    <button id="Zerar">Zerar</button>
+
+    <script>
+
+        let contador = 0
+
+        const textContador = document.getElementById("Contador")
+        const botaoIncrementar = document.getElementById("Incrementar")
+        const botaoZerar = document.getElementById("Zerar")
+
+        botaoIncrementar.addEventListener("click", function(){
+            contador++
+            textContador.textContent = contador
+
+        })
+
+        botaoZerar.addEventListener("click", function(){
+            contador = 0
+            textContador.textContent = contador
+        })
+
+    </script>
+</body>
+</html>

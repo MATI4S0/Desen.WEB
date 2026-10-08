@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorvete</title>
+
+    <style>
+
+        body {
+            background-color: white;
+            color: black;
+            font-family: Arial;
+        }
+
+        .escuro {
+            background-color: #222;
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <button id="modo">Modo Escuro</button>
+
+    <br><br>
+    
+    <input type="text" id="sabor" placeholder="Digite um Sabor">
+
+    <p id="resultado"></p>
+
+    <script>
+
+        const input = document.getElementById("sabor")
+        const resultado = document.getElementById("resultado")
+        const botao = document.getElementById("modo")
+
+        input.addEventListener("input", function(){
+
+            const texto = input.value.toLowerCase()
+
+            if (texto.length > 3) {
+
+                if(texto.includes("chocolate")) {
+                    resultado.textContent = "Eu amo sorvete de chocolate"
+                }else if (texto.includes("flocos")) {
+                    resultado.textContent = "Ahh, mas chocolate é meu favorito"
+                } else {
+                    resultado.textContent = "Ahh, eu esperava um sabor de sorvete..."
+                }
+
+            } else {
+                resultado.textContent = ""
+            }
+
+        })
+
+        botao.addEventListener("click", function(){
+            document.body.classList.toggle("escuro")
+        })
+
+    </script>
+
+</body>
+</html>
