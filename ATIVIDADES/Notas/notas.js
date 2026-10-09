@@ -2,6 +2,7 @@
 const listaNotas = document.querySelector('#listaNotas')
 const campoNota = document.querySelector('#nota')
 const botaoAdicionar = document.querySelector('#btnAdicionar')
+const botaoRemoverTudo = document.querySelector('#btnRemoverTudo')
 
 // Carregar Notas
 let notas = JSON.parse(
@@ -87,7 +88,21 @@ function removerNota(indice) {
     exibirNotas()
 }
 
+//Remover Todas as Notas
+function removerTudo() {
+    notas = []
+
+    localStorage.setItem(
+        "notas",
+        JSON.stringify(notas)
+    )
+
+    exibirNotas()
+}
+
+
 // Eventos
 botaoAdicionar.addEventListener('click', adicionarNota)
+botaoRemoverTudo.addEventListener('click', removerTudo)
 
 exibirNotas()
